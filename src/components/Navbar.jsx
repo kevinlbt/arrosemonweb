@@ -9,6 +9,7 @@ export default function Navbar () {
             <li>prestations</li>
             <li>a propos</li>
             <li>contact</li>
+            <li>test</li>
         </ul>
     </nav>
 }
