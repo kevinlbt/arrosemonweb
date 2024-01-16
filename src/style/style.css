@@ -1,5 +1,14 @@
-.test {
-  text-transform: uppercase;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap");
+nav h1 {
+  font-size: 4em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+nav ul li {
+  font-size: 2.5em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  padding: 0.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
