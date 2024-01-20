@@ -14,7 +14,7 @@ function Card ({title, content , imageSource}) {
 
 export default function Prestation () {
 
-    return <div className="flex flex-col w-5/6 mx-auto">
+    return <div className="flex flex-col w-5/6 mx-auto my-36">
             
 
 
