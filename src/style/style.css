@@ -27,6 +27,21 @@ nav ul .hover_nav:hover {
   background-position: 10% 100%, 90% 100%;
 }
 
+div h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+}
+div h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+}
+div img {
+  width: 20em;
+  height: auto;
+}
+
 header {
   position: relative;
   height: 65vh;
@@ -230,25 +245,6 @@ footer h4 {
   font-size: 1.2em;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-}
-
-div h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 3em;
-  font-weight: 600;
-}
-div h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2em;
-  font-weight: 600;
-}
-div img {
-  width: 20em;
-  height: auto;
-}
-
-div, p, h1, h2, h3 {
-  border: solid black 1px;
 }
 
 /*# sourceMappingURL=style.css.map */
