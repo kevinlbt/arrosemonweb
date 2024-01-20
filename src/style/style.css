@@ -11,4 +11,23 @@ nav ul li {
   padding: 0.5em;
 }
 
+div h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+}
+div h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+}
+div img {
+  width: 20em;
+  height: auto;
+}
+
+div, p, h1, h2, h3 {
+  border: solid black 1px;
+}
+
 /*# sourceMappingURL=style.css.map */

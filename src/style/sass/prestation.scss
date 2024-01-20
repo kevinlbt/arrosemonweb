@@ -1,0 +1,18 @@
+div {
+    h2 {
+        font-family: $main-font;
+        font-size: 3em ;
+        font-weight: 600;
+    }
+    h3 {
+        font-family: $main-font;
+        font-size: 2em ;
+        font-weight: 600;
+    }
+    img{
+        width: 20em;
+        height: auto;
+    }
+}
+
+div, p, h1,h2,h3{border: solid black 1px}
