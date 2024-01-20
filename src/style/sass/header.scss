@@ -1,0 +1,45 @@
+header {
+
+    position: relative;
+    height: 65vh;
+
+    h1 {
+
+        font-family: $main-font;
+        font-size: 6em;
+        font-weight: 500;
+
+        @media (max-width: 1024px) {
+
+            font-size: 4em;
+        }
+    }
+
+    .header1, .header2 {
+
+        position: absolute;
+        width: 20vw;
+        height: auto;
+        border-radius: 5%;
+
+        @media (max-width: 1024px) {
+
+            width: 25vw;
+        }
+    }
+    .header1 {
+
+        top: 0;
+        left: 2vw;
+        /*transform: rotate(-5deg);*/
+    }
+
+    .header2 {
+
+        bottom: 0;
+        right: 2vw;
+        /*transform: rotate(6deg);*/
+    }
+
+    @include button
+}
