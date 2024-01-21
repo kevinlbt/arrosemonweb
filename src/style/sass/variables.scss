@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap');
 
 $main-font: 'Poppins', sans-serif;
-$orange_color: #fc4e32;
+$orange_color: #E67E63;
 
 
 
@@ -47,7 +47,7 @@ $orange_color: #fc4e32;
        
        .button_contact span {
         position: relative;
-        z-index: 10;
+        z-index: 9;
         transition: color 0.4s;
        }
        

@@ -1,7 +1,16 @@
+
+
 nav {
 
+    /*position: sticky;
+    top: 0;*/
+    z-index: 10;
+    transition: all 0.7s ease-in-out;
+    
+    
     h1 {
 
+        width: 350px;
         font-size: 4em;
         font-family: $main-font;
         font-weight: 600;
