@@ -42,10 +42,6 @@ div img {
   height: auto;
 }
 
-div, p, h1, h2, h3 {
-  border: solid black 1px;
-}
-
 header {
   position: relative;
   height: 65vh;
