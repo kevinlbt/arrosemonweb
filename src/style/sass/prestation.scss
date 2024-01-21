@@ -1,17 +1,81 @@
-div {
-    h2 {
-        font-family: $main-font;
-        font-size: 3em ;
-        font-weight: 600;
-    }
-    h3 {
-        font-family: $main-font;
-        font-size: 2em ;
-        font-weight: 600;
-    }
-    img{
-        width: 20em;
-        height: auto;
+
+.white_color {
+
+    color: white;
+
+    @media (max-width: 640px) {
+
+        color: black;
     }
 }
 
+<<<<<<< HEAD
+=======
+.black_color {
+
+    color: black;
+}
+
+.presta {
+
+    overflow: hidden;
+
+    h2 {
+        font-family: $main-font;
+        font-size: 4em ;
+        font-weight: 600;
+        transition: all 0.7s ease-in-out;
+    }
+    
+    div {
+        
+        .left {
+            transition: all 1s;
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        .bot {
+            transition: all 1s;
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        .right {
+            transition: all 1s;
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        .appear{
+            transform: translateX(0%);
+            opacity: 1;
+        }
+
+        h3 {
+            font-family: $main-font;
+            font-size: 2em ;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: $main-font;
+            font-size: 1.3em ;
+            font-weight: 300; 
+        }
+        img{
+            width: 25em;
+            height: auto;
+            border-radius: 10px;
+
+            @media (max-width: 1024px) {
+
+                max-width: 15em;
+            }
+
+            @media (max-width: 640px) {
+
+                max-width: 17em;
+            }
+        }
+    }
+}
+>>>>>>> 621408c976ce2a47d0001c60b4194df4d8121eb4
