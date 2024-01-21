@@ -1,0 +1,114 @@
+.about_section {
+
+    span {
+        content: "";
+        display: block;
+        width: 80px; /* Ajustez la taille du rond selon vos besoins */
+        height: 80px; /* Ajustez la taille du rond selon vos besoins */
+        background-color: $orange_color;
+        border-radius: 50%;
+        transform: translateX(158px) translateY(57px);
+        z-index: -1;
+    }
+
+    h1 {
+
+        font-family: $main-font;
+        font-size: 4em;
+        font-weight: 600;
+    }
+
+    .about_description {
+
+        h2 {
+
+            font-family: $main-font;
+            font-size: 2.5em;
+            font-weight: 500;
+            color: grey;
+        }
+
+        div {
+
+            p:first-child {
+
+                font-family: $main-font;
+                font-size: 2.5em;
+                font-weight: 500;
+            }
+
+            p {
+
+                font-family: $main-font;
+                font-size: 1.3em;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .card_about {
+
+        position: relative;
+
+        h2 {
+
+            font-family: $main-font;
+            font-size: 2em;
+            font-weight: 300;
+        }
+
+        h3 {
+
+            font-family: $main-font;
+            font-size: 2em;
+            font-weight: 300;
+        }
+
+        img {
+
+            width: 20vw;
+            height: 55vh;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        p {
+
+            font-family: $main-font;
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        
+    }
+
+    .line_left {
+
+        &::after {
+
+            content: "";
+            position: absolute;
+            bottom: -40px;
+            left: 0px;
+            display: block;
+            width: 400px; /* Ajustez la taille du rond selon vos besoins */
+            height: 2px; /* Ajustez la taille du rond selon vos besoins */
+            background-color: $orange_color;
+        }
+    }
+
+    .line_right {
+
+        &::after {
+
+            content: "";
+            position: absolute;
+            bottom: -40px;
+            right: 0px;
+            display: block;
+            width: 400px; /* Ajustez la taille du rond selon vos besoins */
+            height: 2px; /* Ajustez la taille du rond selon vos besoins */
+            background-color: $orange_color;
+        }
+    }
+}

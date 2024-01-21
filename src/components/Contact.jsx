@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact () {
 
-    return <section className="contact w-4/5 mx-auto my-12">
+    return <section id="contact" className="contact w-4/5 mx-auto py-12">
         <h3 className="text-center">Contact</h3>
         <p className="w-1/3 mx-auto text-center">Get in touch with us. We're ready to help you 
             find the best solutions.</p>
