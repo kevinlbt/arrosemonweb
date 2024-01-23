@@ -3,7 +3,7 @@ import axios from 'axios';
 import DOMPurify from 'dompurify';
 import Cookies from 'js-cookie';
 
-const AUTH_TOKEN = "ZXOoRm5oxtAcGNbGMyHI7NJpIeZzaqdFNteUa0KM";
+const AUTH_TOKEN = import.meta.env.VITE_AUTH_TOKEN;
 
 function isValidEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -119,8 +119,8 @@ export default function Contact ({background}) {
                 <textarea onChange={HandleMessageChange}  type="text" name="message" rows="7" required/>
                 <label>votre message</label>
             </div>
-            {IfMailSend ? <p className={`text-4xl text-center h-9 ${ifError ? "text-red-500" : "text-green-500"}`}>{mailResponse}</p> : <p className="h-9"></p>}
-            <button type="submit" className="button_contact my-12"><span>envoyer</span></button>
+            {IfMailSend ? <p className={`text-4xl text-center h-9 mb-5 ${ifError ? "text-red-500" : "text-green-500"}`}>{mailResponse}</p> : <p className="h-9"></p>}
+            <button type="submit" className="button_contact mb-12"><span>envoyer</span></button>
         </form>
         <div className={`infos_contact flex flex-col sm:flex-row justify-center items-center m-12 ${background === "white" ? "white_back" : "black_back"}`}>
             <div className="text-center m-5 lg:m-12">
