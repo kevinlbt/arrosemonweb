@@ -15,6 +15,12 @@ nav {
         font-family: $main-font;
         font-weight: 600;
         line-height: 95%;
+
+        @media (max-width: 1250px) {
+
+            font-size: 3em;
+            width: 250px;
+        }
     }
 
     ul {
@@ -26,6 +32,11 @@ nav {
             font-weight: 300;
             margin: 1em;
             cursor: pointer;
+
+            @media (max-width: 1250px) {
+
+                margin: 0.5em;
+            }
         }
 
         @include hoverNavBarEffect

@@ -2,6 +2,7 @@
 
 $main-font: 'Poppins', sans-serif;
 $orange_color: #E67E63;
+$background_color: #0E1428;
 
 
 
@@ -28,12 +29,11 @@ $orange_color: #E67E63;
 
     .button_contact {
         outline: none;
-        width: 15vw;
+        width: 20vw;
         cursor: pointer;
         border: none;
         padding: 0.9rem 2rem;
         font-family: inherit;
-        font-size: inherit;
         position: relative;
         display: inline-block;
         letter-spacing: 0.05rem;
@@ -43,6 +43,19 @@ $orange_color: #E67E63;
         overflow: hidden;
         background: #fcd5bf;
         color: ghostwhite;
+
+        @media (max-width: 1024px) {
+
+            width: 30vw;
+            padding: 0.9rem 1rem;
+        }
+
+        @media (max-width: 640px) {
+
+            width: 50vw;
+            padding: 0.9rem 1rem;
+        }
+
        }
        
        .button_contact span {
