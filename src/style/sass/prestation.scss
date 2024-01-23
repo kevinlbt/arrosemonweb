@@ -1,12 +1,28 @@
-.presta {
+
+.white_color {
 
     color: white;
+
+    @media (max-width: 640px) {
+
+        color: black;
+    }
+}
+
+.black_color {
+
+    color: black;
+}
+
+.presta {
+
     overflow: hidden;
 
     h2 {
         font-family: $main-font;
         font-size: 4em ;
         font-weight: 600;
+        transition: all 0.7s ease-in-out;
     }
     
     div {
@@ -41,12 +57,22 @@
         p {
             font-family: $main-font;
             font-size: 1.3em ;
-            font-weight: 300;
+            font-weight: 300; 
         }
         img{
-            width: 20em;
+            width: 25em;
             height: auto;
             border-radius: 10px;
+
+            @media (max-width: 1024px) {
+
+                max-width: 15em;
+            }
+
+            @media (max-width: 640px) {
+
+                max-width: 17em;
+            }
         }
     }
 }

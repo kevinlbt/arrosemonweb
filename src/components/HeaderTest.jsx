@@ -27,8 +27,8 @@ export default function Header () {
       }, []);
 
     return <header className="flex justify-center items-center my-12">
-        <div className="w-2/3 flex flex-col justify-center items-center">
-            <h1 className="w-3/4 text-center m-5">Donnons vie à vos</h1>
+        <div className="w-2/3 flex flex-col justify-center items-center pb-5">
+            <h1 className="sm:w-3/4 text-center mx-5 mt-5 lg:mb-5">Donnons vie à vos</h1>
             <div className="content">
                 <div className="content__container">
                     <ul class="content__container__list">
@@ -39,7 +39,7 @@ export default function Header () {
                     </ul>
                 </div>
             </div>
-            <a href="/#contact"><button className="button_contact "><span>Contacter-nous</span></button></a>
+            <a href="/#contact"><button className="mt-8 lg:mt-0 button_contact "><span>Contacter-nous</span></button></a>
         </div>
         <img className={`w-2/5 header1 ${headerImageAppear ? "header1_appear" : null}`} src={header1} alt="header1" />
     </header>

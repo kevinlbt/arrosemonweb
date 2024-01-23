@@ -11,14 +11,16 @@ function Home() {
     const [background, setBackground] = useState("white")
 
     const listenScrollEvent = (event) => {
-        if (window.scrollY < 300) {
+        if (window.scrollY < 500) {
           return setBackground("white")
-        } else if (window.scrollY > 300 && window.scrollY < 1500) {
+        } else if (window.scrollY > 500 && window.scrollY < 1500) {
           return setBackground("green")
         } else if (window.scrollY > 1500 && window.scrollY < 2300) {
           return setBackground("white")
-        } else if (window.scrollY > 2300) {
+        } else if (window.scrollY > 2300 && window.scrollY < 3400) {
           return setBackground("green")
+        } else if (window.scrollY > 3400) {
+          return setBackground("white")
         } 
       }
       
@@ -34,8 +36,8 @@ function Home() {
         <Navbar background={background} />
         <HeaderTest />
         <Prestation background={background} />
-        <Portfolio />
-        <Contact />
+        <Portfolio background={background} />
+        <Contact background={background} />
     </section>
   )
 }
