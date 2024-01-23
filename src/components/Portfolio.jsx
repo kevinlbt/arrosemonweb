@@ -29,7 +29,6 @@ export default function Portfolio ({background}) {
             if (containerRef.current !== null) {
         
                 const cardRef = containerRef.current.children[0]
-                console.log(cardRef.getBoundingClientRect().x);
                 if (cardRef.getBoundingClientRect().x < 300) {
                     setSecondCard(true)
                 }
