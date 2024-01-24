@@ -671,6 +671,13 @@ footer h1 {
 footer h1 span {
   font-size: 30px;
 }
+footer h1 .hover_title {
+  transition: 0.15s all ease;
+}
+footer h1 .hover_title:hover {
+  margin: 20px;
+  transition: 0.15s all ease;
+}
 footer h4 {
   font-size: 1.2em;
   font-family: "Poppins", sans-serif;

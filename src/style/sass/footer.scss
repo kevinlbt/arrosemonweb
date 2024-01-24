@@ -6,12 +6,16 @@ footer {
         font-size: 70px;
         font-family: $logo-font;
         font-weight: 600;
+
+        @include hoverTitleEffect
+
         line-height: 60%;
 
         span {
 
             font-size: 30px;
         }
+
 
     }
 

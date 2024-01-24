@@ -23,7 +23,7 @@ export default function Prestation ({background}) {
 
     return <div id="presta" className={`presta flex flex-col px-4 sm:px-20 lg:px-40 my-12 lg:my-36 ${background === "white" ? "black_color" : "white_color"}`}>
             
-                <h2 className={`my-2 py-5 border-y transition-colors ${background === "white" ? "border-grey" : "border-white"}`}>nos prestations</h2>
+                <h2 className={`my-2 py-5 border-y transition-colors ${background === "white" ? "border-grey" : "border-white"}`}>Nos prestations</h2>
                     
                 <div ref={containerRef} className={`flex flex-col lg:flex-row justify-between items-start border-b transition-colors ${background === "white" ? "border-grey" : "border-white"}`}>
                     <Card pos="left" isVisible={isVisible} imageSource={"src/assets/images/create.jpg"} title="Création de site web" content="Tell us about your project. Share your vision, goals, and requirements with us."/>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import header1 from "../assets/images/pctest3.jpg"
-
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 export default function Header () {
@@ -39,7 +39,7 @@ export default function Header () {
                     </ul>
                 </div>
             </div>
-            <a href="/#contact"><button className="mt-8 lg:mt-0 button_contact "><span>Contacter-nous</span></button></a>
+            <Link to="#contact"><button className="mt-8 lg:mt-0 button_contact "><span>Contacter-nous</span></button></Link>
         </div>
         <img className={`w-2/5 header1 ${headerImageAppear ? "header1_appear" : null}`} src={header1} alt="header1" />
     </header>
