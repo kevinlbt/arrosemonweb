@@ -301,13 +301,13 @@ header div .content__container__list__item {
     transform: translate3d(0, -25%, 0);
   }
 }
-header h1 {
+header h2 {
   font-family: "Poppins", sans-serif;
   font-size: 6em;
   font-weight: 500;
 }
 @media (max-width: 1024px) {
-  header h1 {
+  header h2 {
     font-size: 4em;
   }
 }
@@ -708,7 +708,7 @@ footer p {
     display: none;
   }
 }
-.about_section h1 {
+.about_section h3 {
   font-family: "Poppins", sans-serif;
   font-size: 4em;
   font-weight: 600;

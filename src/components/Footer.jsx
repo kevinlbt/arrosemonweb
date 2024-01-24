@@ -17,6 +17,7 @@ export default function Footer () {
                 <p>Nos prestations</p>
                 <p>A propos</p>
                 <p>Notre travail</p>
+                <a href="/mentions"><p>Mentions légales</p></a>
             </div>
         </div>
     </footer>
