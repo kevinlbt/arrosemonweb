@@ -1,4 +1,29 @@
 
+.black_color {
+
+    form {
+
+        .user-box {
+
+            .black_color_input {
+
+                color: #000000;
+                border-bottom: 1px solid #000000;
+
+                &:focus ~ label,
+                &:valid ~ label {
+    
+                    color: $orange_color;
+                }
+            }
+
+            .black_color_label {
+
+                color: #000000;
+            }
+        }
+    }
+}
 .contact {
 
     h3 {

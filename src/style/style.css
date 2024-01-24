@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&family=Poppins:wght@200;300;400;500;700;900&display=swap");
 /* hover effect for li element nav bar*/
 nav {
   /*position: sticky;
@@ -7,16 +7,25 @@ nav {
   transition: all 0.7s ease-in-out;
 }
 nav h1 {
-  width: 350px;
-  font-size: 4em;
-  font-family: "Poppins", sans-serif;
+  width: 250px;
+  font-size: 70px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  line-height: 95%;
+  line-height: 60%;
+}
+nav h1 span {
+  font-size: 30px;
 }
 @media (max-width: 1250px) {
   nav h1 {
-    font-size: 3em;
-    width: 250px;
+    font-size: 60px;
+    width: 200px;
+  }
+}
+@media (max-width: 640px) {
+  nav h1 {
+    font-size: 50px;
+    width: 150px;
   }
 }
 nav ul li {
@@ -67,6 +76,11 @@ nav ul .hover_nav:hover {
   font-weight: 600;
   transition: all 0.7s ease-in-out;
 }
+@media (max-width: 640px) {
+  .presta h2 {
+    font-size: 3em;
+  }
+}
 .presta div .left {
   transition: all 1s;
   transform: translateX(-100%);
@@ -90,6 +104,11 @@ nav ul .hover_nav:hover {
   font-family: "Poppins", sans-serif;
   font-size: 2em;
   font-weight: 600;
+}
+@media (max-width: 640px) {
+  .presta div h3 {
+    font-size: 1.6em;
+  }
 }
 .presta div p {
   font-family: "Poppins", sans-serif;
@@ -372,6 +391,11 @@ header .button_contact:hover::before {
   font-weight: 700;
   transition: all 0.7s ease-in-out;
 }
+@media (max-width: 640px) {
+  .portfolio h2 {
+    font-size: 3.5em;
+  }
+}
 .portfolio p {
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
@@ -389,31 +413,41 @@ header .button_contact:hover::before {
 }
 .portfolio .card_portfolio:hover img {
   width: 950px;
-  height: 50vh;
+  height: 42vh;
+}
+@media (max-width: 1700px) {
+  .portfolio .card_portfolio:hover img {
+    height: 39vh;
+  }
+}
+@media (max-width: 1400px) {
+  .portfolio .card_portfolio:hover img {
+    height: 36vh;
+  }
 }
 @media (max-width: 1300px) {
-  .portfolio .card_portfolio:hover img {
-    height: 43vh;
-  }
-}
-@media (max-width: 1100px) {
-  .portfolio .card_portfolio:hover img {
-    height: 38vh;
-  }
-}
-@media (max-width: 1024px) {
   .portfolio .card_portfolio:hover img {
     height: 33vh;
   }
 }
+@media (max-width: 1100px) {
+  .portfolio .card_portfolio:hover img {
+    height: 30vh;
+  }
+}
+@media (max-width: 1024px) {
+  .portfolio .card_portfolio:hover img {
+    height: 28vh;
+  }
+}
 @media (max-width: 900px) {
   .portfolio .card_portfolio:hover img {
-    height: 29vh;
+    height: 25vh;
   }
 }
 @media (max-width: 750px) {
   .portfolio .card_portfolio:hover img {
-    height: 25vh;
+    height: 21vh;
   }
 }
 @media (max-width: 640px) {
@@ -434,7 +468,7 @@ header .button_contact:hover::before {
   }
 }
 .portfolio .card_portfolio img {
-  width: 6vw;
+  width: 40vw;
   height: 60vh;
   border-radius: 5px;
   transition: all 0.8s ease-in-out;
@@ -442,7 +476,7 @@ header .button_contact:hover::before {
 }
 @media (max-width: 1024px) {
   .portfolio .card_portfolio img {
-    width: 15vw;
+    height: 50vh;
   }
 }
 @media (max-width: 640px) {
@@ -465,6 +499,17 @@ header .button_contact:hover::before {
 }
 .portfolio .appear {
   transform: translateX(0);
+}
+
+.black_color form .user-box .black_color_input {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+.black_color form .user-box .black_color_input:focus ~ label, .black_color form .user-box .black_color_input:valid ~ label {
+  color: #E67E63;
+}
+.black_color form .user-box .black_color_label {
+  color: #000000;
 }
 
 .contact h3 {
@@ -617,10 +662,14 @@ header .button_contact:hover::before {
 }
 
 footer h1 {
-  font-size: 4em;
-  font-family: "Poppins", sans-serif;
+  width: 250px;
+  font-size: 70px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  line-height: 95%;
+  line-height: 60%;
+}
+footer h1 span {
+  font-size: 30px;
 }
 footer h1 .hover_title {
   transition: 0.15s all ease;
@@ -661,6 +710,11 @@ footer p {
   transform: translateX(158px) translateY(57px);
   z-index: -1;
 }
+@media (max-width: 640px) {
+  .about_section span {
+    display: none;
+  }
+}
 .about_section h1 {
   font-family: "Poppins", sans-serif;
   font-size: 4em;
@@ -700,6 +754,16 @@ footer p {
   height: 55vh;
   object-fit: cover;
   border-radius: 10px;
+}
+@media (max-width: 1024px) {
+  .about_section .card_about img {
+    width: 30vw;
+  }
+}
+@media (max-width: 640px) {
+  .about_section .card_about img {
+    width: 65vw;
+  }
 }
 .about_section .card_about p {
   font-family: "Poppins", sans-serif;

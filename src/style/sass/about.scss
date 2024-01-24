@@ -9,6 +9,11 @@
         border-radius: 50%;
         transform: translateX(158px) translateY(57px);
         z-index: -1;
+
+        @media (max-width: 640px) {
+
+            display: none;
+        }
     }
 
     h1 {
@@ -70,6 +75,16 @@
             height: 55vh;
             object-fit: cover;
             border-radius: 10px;
+
+            @media (max-width: 1024px) {
+
+                width: 30vw;
+            }
+
+            @media (max-width: 640px) {
+
+                width: 65vw;
+            }
         }
 
         p {
