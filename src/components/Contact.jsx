@@ -112,8 +112,7 @@ export default function Contact ({background}) {
 
     return <section id="contact" className={`contact sm:w-4/5 mx-auto py-12 ${background === "white" ? "black_color" : "white_color"}`}>
         <h3 className="text-center">Contact</h3>
-        <p className="contact_text w-2/3 sm:w-1/3 mx-auto text-center">Get in touch with us. We're ready to help you 
-            find the best solutions.</p>
+        <p className="contact_text w-2/3 sm:w-1/3 mx-auto text-center">Contactez-nous pour plus d'informations.</p>
         <form onSubmit={handleSubmit} className="my-5 flex flex-col justify-center items-center">
             <div class="user-box m-5">
                 <input className="black_color_input" onChange={HandleNameChange} type="text" name="name" required/>
