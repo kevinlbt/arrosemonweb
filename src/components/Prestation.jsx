@@ -21,7 +21,7 @@ export default function Prestation ({background}) {
         threshold: 0.1,
     })
 
-    return <div id="presta" className={`presta flex flex-col px-20 lg:px-40 my-12 lg:my-36 ${background === "white" ? "black_color" : "white_color"}`}>
+    return <div id="presta" className={`presta flex flex-col px-4 sm:px-20 lg:px-40 my-12 lg:my-36 ${background === "white" ? "black_color" : "white_color"}`}>
             
                 <h2 className={`my-2 py-5 border-y transition-colors ${background === "white" ? "border-grey" : "border-white"}`}>nos prestations</h2>
                     
