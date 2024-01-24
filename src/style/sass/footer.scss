@@ -6,7 +6,8 @@ footer {
         font-family: $main-font;
         font-weight: 600;
         line-height: 95%;
-
+        
+        @include hoverTitleEffect
     }
 
     h4 {

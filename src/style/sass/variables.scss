@@ -92,3 +92,20 @@ $background_color: #0E1428;
        }
        
 }
+
+@mixin hoverTitleEffect {
+
+    .hover_title{
+        // color: red;
+        transition: 0.15s all ease;
+    }
+
+    .hover_title:hover {
+        // color: blue;
+        margin: 20px;
+        // font-size: 4.1rem;
+        transition: 0.15s all ease;
+        // font-size: 4.1rem;
+
+    }
+}
