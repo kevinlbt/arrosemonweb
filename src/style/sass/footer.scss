@@ -6,6 +6,7 @@ footer {
         font-family: $main-font;
         font-weight: 600;
         line-height: 95%;
+
     }
 
     h4 {
@@ -13,6 +14,24 @@ footer {
         font-size: 1.2em;
         font-family: $main-font;
         font-weight: 600;
+
+        @media (max-width: 640px) {
+
+            font-size: 2em;
+        }
+    }
+    
+    p {
+
+        cursor: pointer;
+        font-size: 0.9em;
+        font-family: $main-font;
+        font-weight: 300;
+
+        @media (max-width: 640px) {
+
+            font-size: 1.7em;
+        }
     }
 
 }

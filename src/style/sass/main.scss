@@ -1,10 +1,30 @@
 @import "variables.scss";
 @import "navbar.scss";
-
 @import "prestation.scss";
-
 @import "header.scss";
 @import "portfolio.scss";
 @import "contact.scss";
 @import "footer.scss";
+@import "about.scss";
 
+
+.main_section {
+
+    transition: all 0.8s ease-in-out;
+    z-index: -5;
+}
+
+.white {
+
+    background-color: white;
+}
+
+.green {
+
+    background-color: $background_color;
+
+    @media (max-width: 640px) {
+
+        background-color: white;
+    }
+}
