@@ -23,6 +23,11 @@
         font-size: 4em ;
         font-weight: 600;
         transition: all 0.7s ease-in-out;
+
+        @media (max-width: 640px) {
+
+            font-size: 3em ;
+        }
     }
     
     div {
@@ -52,6 +57,11 @@
             font-family: $main-font;
             font-size: 2em ;
             font-weight: 600;
+
+            @media (max-width: 640px) {
+
+                font-size: 1.6em ;
+            }
         }
 
         p {

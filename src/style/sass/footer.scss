@@ -2,10 +2,16 @@ footer {
 
     h1 {
 
-        font-size: 4em;
-        font-family: $main-font;
+        width: 250px;
+        font-size: 70px;
+        font-family: $logo-font;
         font-weight: 600;
-        line-height: 95%;
+        line-height: 60%;
+
+        span {
+
+            font-size: 30px;
+        }
 
     }
 
