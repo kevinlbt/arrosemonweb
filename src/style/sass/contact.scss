@@ -1,7 +1,31 @@
+
+.black_color {
+
+    form {
+
+        .user-box {
+
+            .black_color_input {
+
+                color: #000000;
+                border-bottom: 1px solid #000000;
+
+                &:focus ~ label,
+                &:valid ~ label {
+    
+                    color: $orange_color;
+                }
+            }
+
+            .black_color_label {
+
+                color: #000000;
+            }
+        }
+    }
+}
 .contact {
 
-    color: white;
-    
     h3 {
 
         font-family: $main-font;
@@ -9,7 +33,7 @@
         font-weight: 700;
     }
 
-    p {
+    .contact_text {
 
         font-family: $main-font;
         font-size: 1.2em;
@@ -17,22 +41,70 @@
 
     form {
 
-        input, select, textarea {
-
+        .user-box {
             width: 50%;
-            background: rgba(255, 255, 255, 0.5); /* Fond transparent */
-            backdrop-filter: blur(5px); /* Flou de 5 pixels */
-            border-bottom: solid grey 1px;
-            border-top: solid transparent 1px;
-            transition: border-top 0.5s ease-in-out;
-            border-radius: 10px;
+            position: relative;
 
-            &:focus {
+            @media (max-width: 1024px) {
 
-                outline: none;
-                border-top: solid grey 1px;
+                width: 70%;
             }
-        }
+
+            @media (max-width: 640px) {
+
+                width: 90%;
+            }
+            
+            input, textarea {
+                width: 100%;
+                padding: 10px 0;
+                font-size: 16px;
+                color: #fff;
+                margin-bottom: 30px;
+                border: none;
+                border-bottom: 1px solid #fff;
+                outline: none;
+                background: transparent;
+
+                @media (max-width: 640px) {
+
+                    color: #000000;
+                    border-bottom: 1px solid #000000;
+                }
+
+
+                &:focus ~ label,
+                &:valid ~ label {
+                top: -35px;
+                left: 0;
+                color: #03e9f4;
+                font-size: 18px;
+
+                    @media (max-width: 640px) {
+
+                        color: $orange_color
+                    }
+                
+                }
+
+              }
+              label {
+                position: absolute;
+                top:0;
+                left: 0;
+                padding: 10px 0;
+                font-size: 20px;
+                color: #fff;
+                pointer-events: none;
+                transition: .5s;
+
+                @media (max-width: 640px) {
+
+                    color: #000000;
+                }
+              }
+              
+          }
 
         textarea {
 
@@ -42,16 +114,27 @@
         @include button
     }
 
+    .black_back {
+
+        background-color: #151d38;
+    }
+    .white_back {
+
+        background-color: #dddfe7;
+
+    }
+
     .infos_contact {
 
-        background-color: rgb(241, 241, 241);
         border-radius: 20px;
+        transition: background-color 0.7s ease-in-out;
         
         h4 {
 
             font-family: $main-font;
             font-size: 2em;
             font-weight: 500;
+            transition: color 0.7s ease-in-out;
         }
 
         p {
@@ -59,6 +142,7 @@
             font-family: $main-font;
             font-size: 1em;
             font-weight: 300;
+            transition: color 0.7s ease-in-out;
         }
     }
 }

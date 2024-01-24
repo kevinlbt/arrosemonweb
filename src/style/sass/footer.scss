@@ -2,10 +2,21 @@ footer {
 
     h1 {
 
-        font-size: 4em;
-        font-family: $main-font;
+        width: 250px;
+        font-size: 70px;
+        font-family: $logo-font;
         font-weight: 600;
-        line-height: 95%;
+
+        @include hoverTitleEffect
+
+        line-height: 60%;
+
+        span {
+
+            font-size: 30px;
+        }
+
+
     }
 
     h4 {
@@ -13,6 +24,11 @@ footer {
         font-size: 1.2em;
         font-family: $main-font;
         font-weight: 600;
+
+        @media (max-width: 640px) {
+
+            font-size: 2em;
+        }
     }
     
     p {
@@ -21,6 +37,11 @@ footer {
         font-size: 0.9em;
         font-family: $main-font;
         font-weight: 300;
+
+        @media (max-width: 640px) {
+
+            font-size: 1.7em;
+        }
     }
 
 }

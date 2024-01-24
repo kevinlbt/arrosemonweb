@@ -1,41 +1,139 @@
 .portfolio {
 
+    overflow: hidden;
+    
     h2 {
 
         font-family: $main-font;
         font-size: 5em;
         font-weight: 700;
+        transition: all 0.7s ease-in-out;
+
+        @media (max-width: 640px) {
+
+            font-size: 3.5em ;
+        }
     }
 
     p {
 
         font-family: $main-font;
         font-size: 1.2em;
+        transition: all 0.7s ease-in-out;
     }
 
     .card_portfolio {
 
-        img {
+        transform: translateX(100vw);
+        transition: transform 0.8s ease-in-out;
+        height: 60vh;
 
-            width: 27vw;
+        @media (max-width: 640px) {
+
             height: auto;
-            border-radius: 10px;
-            transition: all 0.4s ease-in-out;
+        }
 
-            &:hover {
+        &:hover img {
 
-                transform: scale(1.1);
+            width: 950px;
+            height: 42vh;
+            
+            @media (max-width: 1700px) {
+
+                height: 39vh;
+            }
+
+            @media (max-width: 1400px) {
+
+                height: 36vh;
+            }
+
+            @media (max-width: 1300px) {
+
+                height: 33vh;
+            }
+
+            @media (max-width: 1100px) {
+
+                height: 30vh;
             }
 
             @media (max-width: 1024px) {
 
-                width: 42vw;
+                height: 28vh;
+            }
+
+            @media (max-width: 900px) {
+
+                height: 25vh;
+            }
+
+            @media (max-width: 750px) {
+
+                height: 21vh;
+            }
+
+            @media (max-width: 640px) {
+
+                height: auto;
+            }
+        }
+
+        &:hover p {
+
+            visibility: visible;
+            width: 30vw;
+            height: auto;
+
+            @media (max-width: 640px) {
+
+                visibility: visible;
+                width: auto;
+                height: auto;
+            }
+
+        }
+
+        img {
+
+            width: 40vw;
+            height: 60vh;
+            border-radius: 5px;
+            transition: all 0.8s ease-in-out;
+            object-fit: cover;
+
+
+            @media (max-width: 1024px) {
+
+                height: 50vh;
             }
 
             @media (max-width: 640px) {
 
                 width: 60vw;
+                height: auto
             }
         }
+
+        p {
+
+            visibility: hidden;
+            width: 0;
+            height: 0;
+
+            @media (max-width: 640px) {
+
+                visibility: visible;
+                width: auto;
+                height: auto;
+            }
+        }
+
     }
+
+    .appear {
+        
+        transform: translateX(0);
+    }
+
 }

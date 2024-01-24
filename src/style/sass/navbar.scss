@@ -10,11 +10,28 @@ nav {
     
     h1 {
 
-        width: 350px;
-        font-size: 4em;
-        font-family: $main-font;
+        width: 250px;
+        font-size: 70px;
+        font-family: $logo-font;
         font-weight: 600;
-        line-height: 95%;
+        line-height: 60%;
+
+        span {
+
+            font-size: 30px;
+        }
+
+        @media (max-width: 1250px) {
+
+            font-size: 60px;
+            width: 200px;
+        }
+
+        @media (max-width: 640px) {
+
+            font-size: 50px;
+            width: 150px;
+        }
     }
 
     ul {
@@ -26,6 +43,11 @@ nav {
             font-weight: 300;
             margin: 1em;
             cursor: pointer;
+
+            @media (max-width: 1250px) {
+
+                margin: 0.5em;
+            }
         }
 
         @include hoverNavBarEffect
