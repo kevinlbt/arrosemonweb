@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Footer () {
@@ -17,9 +16,13 @@ export default function Footer () {
             </div>
             
             <div className="m-3 sm:m-8">
+               <p>Get in touch</p>
+            </div>
+            <div className="m-3 sm:m-8">
                 <p><Link to="..#presta">Nos prestations</Link></p>
                 <p><a href="/apropos">A propos</a></p>
                 <p><Link to="..#portfolio">Notre travail</Link></p>
+                <a href="/mentions"><p>Mentions légales</p></a>
             </div>
         </div>
     </footer>
