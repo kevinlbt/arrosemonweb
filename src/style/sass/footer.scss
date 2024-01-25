@@ -7,7 +7,7 @@ footer {
         font-family: $logo-font;
         font-weight: 600;
 
-        @include hoverTitleEffect
+        @include hoverTitleEffect;
 
         line-height: 60%;
 

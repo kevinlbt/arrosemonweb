@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { HashLink as Link } from 'react-router-hash-link';
 import Navbar from '../components/Navbar'
 import Prestation from '../components/Prestation'
 import HeaderTest from '../components/HeaderTest'
@@ -6,11 +7,28 @@ import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
 
 
+
+function StickyLogo ({stickyLogoAppear, background}) {
+
+    return <div className={`sticky_logo ${stickyLogoAppear ? "sticky_appear" : null}`}>
+        <Link to="..#nav"><p className={`${background === "white" ? "text-black" : "text-white"}`}>AMW</p></Link>
+    </div>
+}
+
 function Home() {
 
     const [background, setBackground] = useState("white")
+    const [stickyLogoAppear, setStickyLogoAppear] = useState(false);
+
 
     const listenScrollEvent = (event) => {
+        console.log(window.scrollY)
+        if (window.scrollY < 400) {
+             setStickyLogoAppear(false)
+        } 
+        if (window.scrollY > 400) {
+            setStickyLogoAppear(true)
+        }
         if (window.scrollY < 500) {
           return setBackground("white")
         } else if (window.scrollY > 500 && window.scrollY < 1500) {
@@ -33,6 +51,7 @@ function Home() {
 
   return (
     <section className={`main_section ${background}`}>
+        <StickyLogo stickyLogoAppear={stickyLogoAppear} background={background} />
         <Navbar background={background} />
         <HeaderTest />
         <Prestation background={background} />
