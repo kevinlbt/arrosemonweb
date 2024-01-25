@@ -11,7 +11,7 @@ import Contact from '../components/Contact'
 function StickyLogo ({stickyLogoAppear, background}) {
 
     return <div className={`sticky_logo ${stickyLogoAppear ? "sticky_appear" : null}`}>
-        <Link to="..#nav"><p className={`${background === "white" ? "text-black" : "text-white"}`}>AMW</p></Link>
+        <p className={`${background === "white" ? "text-black" : "text-white"}`}><Link to="..#nav">AMW</Link></p>
     </div>
 }
 
@@ -23,10 +23,10 @@ function Home() {
 
     const listenScrollEvent = (event) => {
         console.log(window.scrollY)
-        if (window.scrollY < 400) {
+        if (window.scrollY < 130) {
              setStickyLogoAppear(false)
         } 
-        if (window.scrollY > 400) {
+        if (window.scrollY > 130) {
             setStickyLogoAppear(true)
         }
         if (window.scrollY < 500) {
