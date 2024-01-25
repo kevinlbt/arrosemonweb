@@ -1,5 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&family=Poppins:wght@200;300;400;500;700;900&display=swap");
 /* hover effect for li element nav bar*/
+.main_section {
+  transition: all 0.8s ease-in-out;
+  z-index: -5;
+}
+.main_section .sticky_logo {
+  position: sticky;
+  top: 100px;
+  height: 0;
+  z-index: 7;
+}
+.main_section .sticky_logo:hover p {
+  transform: scale(1.1);
+}
+@media (max-width: 640px) {
+  .main_section .sticky_logo {
+    display: none;
+  }
+}
+.main_section .sticky_logo p {
+  opacity: 0;
+  height: 0;
+  transition: all 0.4s ease-in-out;
+  margin-left: 20px;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: -25px;
+  text-align: center;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .main_section .sticky_logo p {
+    margin-left: 5px;
+  }
+}
+.main_section .sticky_appear p {
+  opacity: 1;
+}
+
+.white {
+  background-color: white;
+}
+
+.green {
+  background-color: #0E1428;
+}
+@media (max-width: 640px) {
+  .green {
+    background-color: white;
+  }
+}
+
 nav {
   /*position: sticky;
   top: 0;*/
@@ -116,18 +170,21 @@ nav ul .hover_nav:hover {
   font-weight: 300;
 }
 .presta div img {
-  width: 25em;
-  height: auto;
+  width: 27em;
+  height: 13vw;
+  object-fit: cover;
   border-radius: 10px;
 }
 @media (max-width: 1024px) {
   .presta div img {
-    max-width: 15em;
+    max-width: 18em;
+    height: 18vw;
   }
 }
 @media (max-width: 640px) {
   .presta div img {
     max-width: 17em;
+    height: 35vw;
   }
 }
 
@@ -335,7 +392,6 @@ header .button_contact {
   display: inline-block;
   letter-spacing: 0.05rem;
   font-weight: 700;
-  font-size: 17px;
   border-radius: 20px;
   overflow: hidden;
   background: #fcd5bf;
@@ -592,7 +648,6 @@ header .button_contact:hover::before {
   display: inline-block;
   letter-spacing: 0.05rem;
   font-weight: 700;
-  font-size: 17px;
   border-radius: 20px;
   overflow: hidden;
   background: #fcd5bf;
@@ -789,47 +844,6 @@ footer p {
   width: 400px; /* Ajustez la taille du rond selon vos besoins */
   height: 2px; /* Ajustez la taille du rond selon vos besoins */
   background-color: #E67E63;
-}
-
-.main_section {
-  transition: all 0.8s ease-in-out;
-  z-index: -5;
-}
-.main_section .sticky_logo {
-  position: sticky;
-  top: 100px;
-  height: 0;
-  z-index: 7;
-}
-.main_section .sticky_logo p {
-  opacity: 0;
-  height: 0;
-  transition: all 0.4s ease-in-out;
-  margin-left: 20px;
-  font-size: 50px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  letter-spacing: -25px;
-  text-align: center;
-  cursor: pointer;
-}
-.main_section .sticky_appear p {
-  opacity: 1;
-}
-
-.white {
-  background-color: white;
-}
-
-.green {
-  background-color: #0E1428;
-}
-@media (max-width: 640px) {
-  .green {
-    background-color: white;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

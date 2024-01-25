@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "home.scss";
 @import "navbar.scss";
 @import "prestation.scss";
 @import "header.scss";
@@ -8,57 +9,3 @@
 @import "about.scss";
 
 
-.main_section {
-
-    transition: all 0.8s ease-in-out;
-    z-index: -5;
-
-    .sticky_logo {
-
-            
-            position: sticky;
-            top: 100px;
-            height: 0;
-            z-index: 7;
-
-        p {
-
-            opacity: 0;
-            height: 0;
-            transition: all 0.4s ease-in-out;
-            margin-left: 20px;
-            font-size: 50px;
-            font-family: $main-font;
-            font-weight: 900;
-            writing-mode: vertical-rl;
-            text-orientation: upright;
-            letter-spacing: -25px;
-            text-align: center;
-            cursor: pointer;
-        }
-    }
-
-    .sticky_appear {
-
-        p {
-
-            opacity: 1;
-        }
-    }
-}
-
-.white {
-
-    background-color: white;
-}
-
-.green {
-
-    background-color: $background_color;
-
-    @media (max-width: 640px) {
-
-        background-color: white;
-    }
-
-}
