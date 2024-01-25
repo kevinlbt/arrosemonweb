@@ -128,11 +128,11 @@ export default function Contact ({background}) {
             </div>
             <div class="user-box m-5">
                 <input className="black_color_input" onChange={HandleSubjectChange} type="text" name="name" required/>
-                <label className="black_color_label">sujet</label>
+                <label className="black_color_label">Sujet</label>
             </div>
             <div class="user-box m-5">
                 <textarea className="black_color_input" onChange={HandleMessageChange}  type="text" name="message" rows="7" required/>
-                <label className="black_color_label">votre message</label>
+                <label className="black_color_label">Votre message</label>
             </div>
             {IfMailSend ? <p className={`text-4xl text-center h-9 mb-5 ${ifError ? "text-red-500" : "text-green-500"}`}>{mailResponse}</p> : <p className="h-9"></p>}
             <button type="submit" className="button_contact mb-12"><span>envoyer</span></button>
