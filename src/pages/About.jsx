@@ -23,7 +23,7 @@ export default function About () {
         <section className="about_section py-12">
             <div className="flex justify-start">
                 <span className=""></span>
-                <h1 className="ml-12 sm:ml-24 my-12">A propos de nous</h1>
+                <h3 className="ml-12 sm:ml-24 my-12">A propos de nous</h3>
             </div>
             <div className="about_description w-5/6 flex flex-col sm:flex-row mx-auto justify-between items-start my-24">
                 <h2 className="w-2/4 my-5 sm:my-o text-left">qui sommes nous ?</h2>
