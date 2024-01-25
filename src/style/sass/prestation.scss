@@ -70,18 +70,21 @@
             font-weight: 300; 
         }
         img{
-            width: 25em;
-            height: auto;
+            width: 27em;
+            height: 13vw;
+            object-fit: cover;
             border-radius: 10px;
 
             @media (max-width: 1024px) {
 
-                max-width: 15em;
+                max-width: 18em;
+                height: 18vw;
             }
 
             @media (max-width: 640px) {
 
                 max-width: 17em;
+                height: 35vw;
             }
         }
     }
