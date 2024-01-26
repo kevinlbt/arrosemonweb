@@ -16,7 +16,7 @@ export default function Footer () {
             </div>
             
             <div className="m-3 sm:m-8">
-               <p>Get in touch</p>
+               <p>Nous contacter</p>
             </div>
             <div className="m-3 sm:m-8">
                 <p><Link to="..#presta">Nos prestations</Link></p>
