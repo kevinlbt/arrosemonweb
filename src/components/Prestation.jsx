@@ -26,9 +26,9 @@ export default function Prestation ({background}) {
                 <h2 className={`my-2 py-5 border-y transition-colors ${background === "white" ? "border-grey" : "border-white"}`}>Nos prestations</h2>
                     
                 <div ref={containerRef} className={`flex flex-col lg:flex-row justify-between items-start border-b transition-colors ${background === "white" ? "border-grey" : "border-white"}`}>
-                    <Card pos="left" isVisible={isVisible} imageSource={"src/assets/images/create.jpg"} title="Création de site web" content="Tell us about your project. Share your vision, goals, and requirements with us."/>
-                    <Card pos="bot" isVisible={isVisible} imageSource={"src/assets/images/seo.jpg"} title="SEO" content="Let us create a stunning website that represents your brand. We'll bring your ideas to life."/>
-                    <Card pos="right" isVisible={isVisible} imageSource={"src/assets/images/online.jpg"} title="Mise en ligne" content="Launch your website. We'll ensure it's optimized for performance and ready to impress."/>
+                    <Card pos="left" isVisible={isVisible}  title="1 - Création de site web" content="Tell us about your project. Share your vision, goals, and requirements with us."/>
+                    <Card pos="bot" isVisible={isVisible}  title="2 - Optimisation du SEO" content="Let us create a stunning website that represents your brand. We'll bring your ideas to life."/>
+                    <Card pos="right" isVisible={isVisible}  title="3 - Hébergement" content="Launch your website. We'll ensure it's optimized for performance and ready to impress."/>
                 </div>
         
     </div>
