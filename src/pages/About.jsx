@@ -26,14 +26,14 @@ export default function About () {
                 <h3 className="ml-12 sm:ml-24 my-12">A propos de nous</h3>
             </div>
             <div className="about_description w-5/6 flex flex-col sm:flex-row mx-auto justify-between items-start my-24">
-                <h2 className="w-2/4 my-5 sm:my-o text-left">qui sommes nous ?</h2>
+                <h2 className="w-2/4 my-5 sm:my-o text-left">Qui sommes nous ?</h2>
                 <div className="sm:w-3/5">
                     <p className="mb-12">Nous sommes passionnés par la création de sites Web époustouflants pour nos clients.</p>
-                    <p>Whether you need a simple portfolio website or a complex e-commerce platform, our team is here to bring your vision to life. With a focus on elegant design and seamless functionality, we strive to deliver exceptional websites that leave a lasting impression. Partner with us and experience the difference of working with a dedicated and talented web agency.</p>
+                    <p>Les idées sont comme les plantes, il faut prendre le temps de les comprendre, de leur donner de la lumière et de les arroser. Avec arrosemonweb, nous vous aidons à développer vos idées afin de les aider à germer pour qu’elles deviennent florissantes. Arrose ton idée avec arrosemonweb et mets en avant ton commerce florissant.</p>
                 </div>
             </div>
-            <AboutCard way={false} name={"Kevin le bot"} titre="co-fondateur" imageSrc={kev} texte={"Whether you need a simple portfolio website or a complex e-commerce platform, our team is here to bring your vision to life. With a focus on elegant design and seamless functionality, we strive to deliver exceptional websites that leave a lasting impression. Partner with us and experience the difference of working with a dedicated and talented web agency."} />
-            <AboutCard way={true} name={"Alexandre Lhotellier"} titre="co-fondateur" imageSrc={alex} texte={"Whether you need a simple portfolio website or a complex e-commerce platform, our team is here to bring your vision to life. With a focus on elegant design and seamless functionality, we strive to deliver exceptional websites that leave a lasting impression. Partner with us and experience the difference of working with a dedicated and talented web agency."} />    
+            <AboutCard way={false} name={"Kevin le bot"} titre="co-fondateur" imageSrc={kev} texte={"Le geek photographe - Le premier membre de l’équipe, Kévin, un breton expatrié en terre québécoise. Il sera là pour adapter votre site web à vos besoins. Passionné de photos et de jeux vidéo, son œil d’artiste affûté et son souci du détail lui permettent de vous concocter des interfaces aux petits oignons."} />
+            <AboutCard way={true} name={"Alexandre Lhotellier"} titre="co-fondateur" imageSrc={alex} texte={"Le sportif un peu (beaucoup) geek - Le second membre de l’équipe, Alex, un autre breton également expatrié en terre québécoise. Lui c’est le sportif, toujours prêt à se surpasser et se donner pour son équipe. Après plusieurs années dans le milieu bancaire, il a voulu mettre à profit ses compétences d’analyse et de gestion pour aider les entreprises à se démarquer sur le web. Sa communication et son rire communicatif vous aideront à mettre des mots sur vos idées. Il saura vous accompagner tout au long de votre projet pour avoir un site correspondant à votre image."} />    
         </section>
     </React.Fragment>
 }
