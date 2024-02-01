@@ -26,9 +26,11 @@ export default function Prestation ({background}) {
                 <h2 className={`my-2 py-5 border-y transition-colors ${background === "white" ? "border-grey" : "border-white"}`}>Nos prestations</h2>
                     
                 <div ref={containerRef} className={`flex flex-col lg:flex-row justify-between items-start border-b transition-colors ${background === "white" ? "border-grey" : "border-white"}`}>
-                    <Card pos="left" isVisible={isVisible} imageSource={"src/assets/images/create.jpg"} title="Création de site web" content="Tell us about your project. Share your vision, goals, and requirements with us."/>
-                    <Card pos="bot" isVisible={isVisible} imageSource={"src/assets/images/seo.png"} title="SEO" content="Let us create a stunning website that represents your brand. We'll bring your ideas to life."/>
-                    <Card pos="right" isVisible={isVisible} imageSource={"src/assets/images/online.jpg"} title="Mise en ligne" content="Launch your website. We'll ensure it's optimized for performance and ready to impress."/>
+
+                    <Card pos="left" isVisible={isVisible}  imageSource="/src/assets/images/project_planning.webp" title="1 - Création de site web" content="De la conception à la mise en œuvre, nous créons des sites web esthétiques, intuitifs et adaptés à tous les appareils pour offrir une expérience utilisateur fluide."/>
+                    <Card pos="bot" isVisible={isVisible}  imageSource="/src/assets/images/seo.webp" title="2 - Optimisation du SEO" content="Prenez les devants, assurez-vous d'être trouvé en ligne. Nos experts SEO travaillent pour améliorer votre visibilité sur les moteurs de recherche."/>
+                    <Card pos="right" isVisible={isVisible}  imageSource="/src/assets/images/server.webp" title="3 - Hébergement" content="Votre site nécessite une attention constante. Nous offrons un services d'hébergement et de maintenance de qualité pour garantir un fonctionnement optimal."/>
+
                 </div>
         
     </div>
