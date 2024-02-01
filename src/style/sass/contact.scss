@@ -26,6 +26,7 @@
 }
 .contact {
 
+    position: relative;
     h3 {
 
         font-family: $main-font;
@@ -39,9 +40,55 @@
         font-size: 1.2em;
     }
 
+    .paper {
+
+        position: absolute;
+        top: 10vw;
+        left: 6vw;
+        transform: rotate(110deg);
+        
+        @media (max-width: 800px) {
+
+            display: none;
+        }
+
+        img {
+
+            width: 100px;
+            animation: fly_paper 1s ease-in-out infinite;
+            transition: transform 0.3s ease;
+        }
+    }
+
+    .paper2 {
+
+        position: absolute;
+        bottom: 550px;
+        right: 5vw;
+        transform: rotate(-80deg);
+
+        @media (max-width: 1024px) {
+
+            bottom: 550px;
+            right: 0vw;
+        }
+
+        @media (max-width: 800px) {
+
+            display: none;
+        }
+        
+        img {
+
+            width: 100px;
+            animation: fly_paper 1s ease-in-out infinite;
+        }
+    }
+
     form {
 
         .user-box {
+            
             width: 50%;
             position: relative;
 

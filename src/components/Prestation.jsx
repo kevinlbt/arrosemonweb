@@ -4,7 +4,7 @@ import { useElementOnScreen } from '../utils/useElementOnScreen'
 
 function Card ({title, content , imageSource, isVisible, pos}) {
 
-    return <div className={`${pos} basis-1/4 justify-center items-center flex flex-col sm:flex-row lg:flex-col my-10 ${isVisible ? "appear" : null}`}>
+    return <div className={`${pos} justify-center items-center flex flex-col sm:flex-row lg:flex-col mx-5 my-10 ${isVisible ? "appear" : null}`}>
         <img className="order-3 lg:order-1" src={imageSource}  />
         <div className="order-1 lg:order-2">
             <h3 className="my-3">{title}</h3>

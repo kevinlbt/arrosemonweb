@@ -3,6 +3,7 @@ import axios from 'axios';
 import DOMPurify from 'dompurify';
 import Cookies from 'js-cookie';
 import { Link } from "react-router-dom";
+import paper from "../assets/images/paper.png"
 
 const AUTH_TOKEN = import.meta.env.VITE_AUTH_TOKEN;
 
@@ -113,30 +114,36 @@ export default function Contact ({background}) {
     return <section id="contact" className={`contact sm:w-4/5 mx-auto py-12 ${background === "white" ? "black_color" : "white_color"}`}>
         <h3 className="text-center">Contact</h3>
         <p className="contact_text w-2/3 sm:w-1/3 mx-auto text-center">Contactez-nous pour plus d'informations.</p>
+        <div className="paper">
+            <img src={paper} alt={paper} />
+        </div>
         <form onSubmit={handleSubmit} className="my-5 flex flex-col justify-center items-center">
-            <div class="user-box m-5">
+            <div className="user-box m-5">
                 <input className="black_color_input" onChange={HandleNameChange} type="text" name="name" required/>
                 <label className="black_color_label">Nom</label>
             </div>
-            <div class="user-box m-5">
+            <div className="user-box m-5">
                 <input className="black_color_input" onChange={HandleFirstnameChange} type="text" name="name" required/>
                 <label className="black_color_label">Prénom</label>
             </div>
-            <div class="user-box m-5">
+            <div className="user-box m-5">
                 <input className="black_color_input" onChange={HandleEmailChange} type="email" name="name" required/>
                 <label className="black_color_label">Email</label>
             </div>
-            <div class="user-box m-5">
+            <div className="user-box m-5">
                 <input className="black_color_input" onChange={HandleSubjectChange} type="text" name="name" required/>
                 <label className="black_color_label">Sujet</label>
             </div>
-            <div class="user-box m-5">
+            <div className="user-box m-5">
                 <textarea className="black_color_input" onChange={HandleMessageChange}  type="text" name="message" rows="7" required/>
                 <label className="black_color_label">Votre message</label>
             </div>
             {IfMailSend ? <p className={`text-4xl text-center h-9 mb-5 ${ifError ? "text-red-500" : "text-green-500"}`}>{mailResponse}</p> : <p className="h-9"></p>}
             <button type="submit" className="button_contact mb-12"><span>envoyer</span></button>
         </form>
+        <div className="paper2">
+            <img src={paper} alt={paper} />
+        </div>
         <div className={`infos_contact flex flex-col sm:flex-row justify-center items-center m-4 sm:m-12 ${background === "white" ? "white_back" : "black_back"}`}>
             <div className="text-center m-5 lg:m-12">
                 <h4 className="my-4">Appelez-nous</h4>

@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&family=Poppins:wght@200;300;400;500;700;900&display=swap");
 /* hover effect for li element nav bar*/
+@keyframes fly_paper {
+  from {
+    transform: translateX(0%) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(10%) rotateY(50deg);
+  }
+  to {
+    transform: translateX(0%) rotateY(0deg);
+  }
+}
 .main_section {
   transition: all 0.8s ease-in-out;
   z-index: -5;
@@ -170,8 +181,8 @@ nav ul .hover_nav:hover {
   font-weight: 300;
 }
 .presta div img {
-  width: 30em;
-  height: 300px;
+  width: 50em;
+  height: 280px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -568,6 +579,9 @@ header .button_contact:hover::before {
   color: #000000;
 }
 
+.contact {
+  position: relative;
+}
 .contact h3 {
   font-family: "Poppins", sans-serif;
   font-size: 5em;
@@ -576,6 +590,43 @@ header .button_contact:hover::before {
 .contact .contact_text {
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
+}
+.contact .paper {
+  position: absolute;
+  top: 10vw;
+  left: 6vw;
+  transform: rotate(110deg);
+}
+@media (max-width: 800px) {
+  .contact .paper {
+    display: none;
+  }
+}
+.contact .paper img {
+  width: 100px;
+  animation: fly_paper 1s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+.contact .paper2 {
+  position: absolute;
+  bottom: 550px;
+  right: 5vw;
+  transform: rotate(-80deg);
+}
+@media (max-width: 1024px) {
+  .contact .paper2 {
+    bottom: 550px;
+    right: 0vw;
+  }
+}
+@media (max-width: 800px) {
+  .contact .paper2 {
+    display: none;
+  }
+}
+.contact .paper2 img {
+  width: 100px;
+  animation: fly_paper 1s ease-in-out infinite;
 }
 .contact form .user-box {
   width: 50%;
