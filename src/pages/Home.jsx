@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { HashLink as Link } from 'react-router-hash-link';
 import Navbar from '../components/Navbar'
 import Prestation from '../components/Prestation'
-import HeaderTest from '../components/HeaderTest'
+import Header from '../components/Header'
 import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
 
@@ -22,7 +22,7 @@ function Home() {
 
 
     const listenScrollEvent = (event) => {
-        console.log(window.scrollY)
+        
         if (window.scrollY < 130) {
              setStickyLogoAppear(false)
         } 
@@ -53,7 +53,7 @@ function Home() {
     <section className={`main_section ${background}`}>
         <StickyLogo stickyLogoAppear={stickyLogoAppear} background={background} />
         <Navbar background={background} />
-        <HeaderTest />
+        <Header />
         <Prestation background={background} />
         <Portfolio background={background} />
         <Contact background={background} />

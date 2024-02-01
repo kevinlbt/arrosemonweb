@@ -26,6 +26,21 @@ $background_color: #0E1428;
     }
 }
 
+@keyframes fly_paper {
+
+    from {
+        transform: translateX(0%) rotateY(0deg);
+    }
+
+    50% {
+        transform: translateX(10%) rotateY(50deg);
+    }
+
+    to {
+        transform: translateX(0%) rotateY(0deg);
+     }
+}
+
 @mixin button {
 
     .button_contact {
