@@ -56,8 +56,8 @@ export default function Portfolio ({background}) {
         <p className="my-3 w-4/6 lg:w-2/6">Ils nous ont fait confiance :</p>
 
         <div ref={containerRef} className="flex flex-col sm:flex-row justify-start items-start">
-            <CardPortfolio appear={firstCard} isVisible={isVisible} img={jerem} link={"https://jeremypettre.com/"} texte="View our portfolio and explore our pastel-inspired designs. We create websites that leave a lasting impression." />
-            <CardPortfolio appear={secondCard} isVisible={isVisible} img={mkz} link={"https://mkz.kevinlebot.com/"} texte="View our portfolio and explore our pastel-inspired designs. We create websites that leave a lasting impression." />
+            <CardPortfolio appear={firstCard} isVisible={isVisible} img={jerem} link={"https://jeremypettre.com/"} texte="Chaque plante a besoin de lumière pour prospérer. C’est ainsi que nous avons accompagné Jérémy Pettre dans la mise en avant de son activité de création de contenu et de montage vidéo." />
+            <CardPortfolio appear={secondCard} isVisible={isVisible} img={mkz} link={"https://mkz.kevinlebot.com/"} texte="Pour développer sa présence en ligne, Mk’Z un courtier en assurances entreprises & risques cybers basé en Bretagne, a fait appel à nos services. Nous lui avons proposé un design sobre adapté à ses besoins." />
         </div>
     </section>
 }
