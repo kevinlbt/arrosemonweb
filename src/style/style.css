@@ -43,6 +43,11 @@
   text-align: center;
   cursor: pointer;
 }
+@media (max-width: 1280px) {
+  .main_section .sticky_logo p {
+    margin-left: 8px;
+  }
+}
 @media (max-width: 1024px) {
   .main_section .sticky_logo p {
     margin-left: 5px;
@@ -181,10 +186,15 @@ nav ul .hover_nav:hover {
   font-weight: 300;
 }
 .presta div img {
-  width: 50em;
+  width: 350px;
   height: 280px;
   object-fit: cover;
   border-radius: 10px;
+}
+@media (max-width: 1300px) {
+  .presta div img {
+    height: 200px;
+  }
 }
 @media (max-width: 1024px) {
   .presta div img {
@@ -198,6 +208,7 @@ nav ul .hover_nav:hover {
     height: 35vw;
   }
 }
+
 header {
   position: relative;
   height: 65vh;
