@@ -52,8 +52,12 @@ footer {
     }
 
     #footerLogos {
+        // a {
+        //     min-width: ;
+        // }
         img {
-            width : 2em;
+            max-width : 2em;
+            min-width: 20px;
         }
     }
 
