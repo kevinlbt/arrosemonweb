@@ -15,6 +15,7 @@ function isValidEmail(email) {
 const ButtonMailto = ({ mailto, label }) => {
     return (
         <Link
+            className="transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... hover:underline"
             to='#'
             onClick={(e) => {
                 window.location.href = mailto;
@@ -139,7 +140,7 @@ export default function Contact ({background}) {
                 <label className="black_color_label">Votre message</label>
             </div>
             {IfMailSend ? <p className={`text-4xl text-center h-9 mb-5 ${ifError ? "text-red-500" : "text-green-500"}`}>{mailResponse}</p> : <p className="h-9"></p>}
-            <button type="submit" className="button_contact mb-12"><span>envoyer</span></button>
+            <button type="submit" className="button_contact mb-12"><span>Envoyer</span></button>
         </form>
         <div className="paper2">
             <img src={paper} alt={paper} />
