@@ -70,10 +70,15 @@
             font-weight: 300; 
         }
         img{
-            width: 50em;
+            width: 350px;
             height: 280px;
             object-fit: cover;
             border-radius: 10px;
+
+            @media (max-width: 1300px) {
+
+                height: 200px;
+            }
 
             @media (max-width: 1024px) {
 
@@ -89,7 +94,4 @@
         }
     }
 
-    img {
-       
-    }
 }
