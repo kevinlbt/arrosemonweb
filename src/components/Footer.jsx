@@ -1,5 +1,7 @@
 import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
+import linkedin from "../assets/images/linkedin.png";
+import insta from "../assets/images/insta.png";
 
 export default function Footer () {
 
@@ -10,8 +12,8 @@ export default function Footer () {
 
         <div className="w-2/3 flex flex-col sm:flex-row justify-end items-center text-center">
             <div id="footerLogos" className="space-y-2 m-3 sm:m-8">
-                <p className="transition transform hover:scale-125 motion-reduce:transition-none motion-reduce:hover:transform-none ..."><Link to="https://www.linkedin.com/company/arrosemonweb"><img src="/src/assets/images/linkedin.png"/></Link></p>
-                <p className="transition transform hover:scale-125 motion-reduce:transition-none motion-reduce:hover:transform-none ..."><Link to="https://www.instagram.com/arrosemonweb/"><img src="/src/assets/images/insta.png"/></Link></p>
+                <p className="transition transform hover:scale-125 motion-reduce:transition-none motion-reduce:hover:transform-none ..."><Link to="https://www.linkedin.com/company/arrosemonweb"><img src={linkedin} /></Link></p>
+                <p className="transition transform hover:scale-125 motion-reduce:transition-none motion-reduce:hover:transform-none ..."><Link to="https://www.instagram.com/arrosemonweb/"><img src={insta} /></Link></p>
             </div>
             
             <div className="m-3 sm:m-8">
