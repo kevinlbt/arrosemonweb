@@ -148,8 +148,7 @@ export default function Contact ({background}) {
         <div className={`infos_contact flex flex-col sm:flex-row justify-center items-center m-4 sm:m-12 ${background === "white" ? "white_back" : "black_back"}`}>
             <div className="text-center m-5 lg:m-12">
                 <h4 className="my-4">Appelez-nous</h4>
-                <p>450 233 3986</p>
-                <p>450 567 4589</p>
+                <p className="my-5">(438)-802-2763</p>
             </div>
             <div className="m-5 text-center lg:m-12">
                 <h4 className="my-4">Envoyez-nous un email</h4>
