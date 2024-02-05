@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import jerem from "../assets/images/jerem.jpg"
-import mkz from "../assets/images/mkz.png"
+import jerem from "../assets/images/jerem.webp"
+import mkz from "../assets/images/mkz.webp"
 import { useElementOnScreen } from '../utils/useElementOnScreen'
 
 function CardPortfolio ({img, texte, link, isVisible, appear}) {

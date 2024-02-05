@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from '../components/Navbar'
 import kev from "../assets/images/kev.webp"
-import alex from "../assets/images/alex.jpg"
+import alex from "../assets/images/alex.webp"
 
 
 function AboutCard ({name, titre, imageSrc, texte, way}) {
