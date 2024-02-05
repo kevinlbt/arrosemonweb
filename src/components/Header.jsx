@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import header1 from "../assets/images/pctest3.jpg"
+import header1 from "../assets/images/pctest3.wepb"
 import { HashLink as Link } from 'react-router-hash-link';
 
 
