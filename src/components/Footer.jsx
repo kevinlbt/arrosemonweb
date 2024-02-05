@@ -12,8 +12,8 @@ export default function Footer () {
 
         <div className="w-2/3 flex flex-col sm:flex-row justify-end items-center text-center">
             <div id="footerLogos" className="space-y-2 m-3 sm:m-8">
-                <p className="transition transform hover:scale-125 motion-reduce:transition-none motion-reduce:hover:transform-none ..."><Link to="https://www.linkedin.com/company/arrosemonweb" aria-label="linkedin"><img src={linkedin} alt={linkedin} /></Link></p>
-                <p className="transition transform hover:scale-125 motion-reduce:transition-none motion-reduce:hover:transform-none ..."><Link to="https://www.instagram.com/arrosemonweb/" aria-label="instagram"><img src={insta} alt={instagram}/></Link></p>
+                <p className="transition transform hover:scale-125 motion-reduce:transition-none motion-reduce:hover:transform-none ..."><Link to="https://www.linkedin.com/company/arrosemonweb" aria-label="linkedin"><img src={linkedin} alt="linkedin" /></Link></p>
+                <p className="transition transform hover:scale-125 motion-reduce:transition-none motion-reduce:hover:transform-none ..."><Link to="https://www.instagram.com/arrosemonweb/" aria-label="instagram"><img src={insta} alt="instagram" /></Link></p>
             </div>
             
             <div className="m-3 sm:m-8">
