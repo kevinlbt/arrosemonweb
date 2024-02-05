@@ -6,7 +6,7 @@ import { useElementOnScreen } from '../utils/useElementOnScreen'
 function CardPortfolio ({img, texte, link, isVisible, appear}) {
 
     return <div className={`card_portfolio flex flex-col items-center my-10 mx-3 ${isVisible && appear ? "appear" : null}`}>
-                <a href={link} target="_blank" rel="noreferrer"><img src={img} alt={img} /></a>
+                <a href={link} aria-label="voir le site" target="_blank" rel="noreferrer"><img src={img} alt={img} /></a>
                 <p className="my-5">{texte}</p>
             </div> 
 }
