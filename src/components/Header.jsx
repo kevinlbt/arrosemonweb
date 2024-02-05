@@ -41,6 +41,6 @@ export default function Header () {
             </div>
             <Link to="#contact"><button className="mt-8 lg:mt-0 button_contact "><span>Contactez-nous</span></button></Link>
         </div>
-        <img className={`w-2/5 header1 ${headerImageAppear ? "header1_appear" : null}`} src={header1} alt="header1" />
+        <img className={`w-2/5 header1 ${headerImageAppear ? "header1_appear" : null}`} src={header1} alt="header with tablet and website" />
     </header>
 }

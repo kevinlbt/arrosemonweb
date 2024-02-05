@@ -121,23 +121,23 @@ export default function Contact ({background}) {
         <form onSubmit={handleSubmit} className="my-5 flex flex-col justify-center items-center">
             <div className="user-box m-5">
                 <input className="black_color_input" onChange={HandleNameChange} type="text" name="name" required/>
-                <label className="black_color_label">Nom</label>
+                <label htmlFor="name" className="black_color_label">Nom</label>
             </div>
             <div className="user-box m-5">
-                <input className="black_color_input" onChange={HandleFirstnameChange} type="text" name="name" required/>
-                <label className="black_color_label">Prénom</label>
+                <input className="black_color_input" onChange={HandleFirstnameChange} type="text" name="firstname" required/>
+                <label htmlFor="firstname" className="black_color_label">Prénom</label>
             </div>
             <div className="user-box m-5">
-                <input className="black_color_input" onChange={HandleEmailChange} type="email" name="name" required/>
-                <label className="black_color_label">Email</label>
+                <input className="black_color_input" onChange={HandleEmailChange} type="email" name="email" required/>
+                <label htmlFor="email" className="black_color_label">Email</label>
             </div>
             <div className="user-box m-5">
-                <input className="black_color_input" onChange={HandleSubjectChange} type="text" name="name" required/>
-                <label className="black_color_label">Sujet</label>
+                <input className="black_color_input" onChange={HandleSubjectChange} type="text" name="sujet" required/>
+                <label htmlFor="sujet" className="black_color_label">Sujet</label>
             </div>
             <div className="user-box m-5">
                 <textarea className="black_color_input" onChange={HandleMessageChange}  type="text" name="message" rows="7" required/>
-                <label className="black_color_label">Votre message</label>
+                <label htmlFor="message" className="black_color_label">Votre message</label>
             </div>
             {IfMailSend ? <p className={`text-4xl text-center h-9 mb-5 ${ifError ? "text-red-500" : "text-green-500"}`}>{mailResponse}</p> : <p className="h-9"></p>}
             <button type="submit" className="button_contact mb-12"><span>Envoyer</span></button>
