@@ -16,6 +16,7 @@ const ButtonMailto = ({ mailto, label }) => {
     return (
         <Link
             className="transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ... hover:underline"
+            aria-label={`envoyer mail a cette address ${label}`}
             to='#'
             onClick={(e) => {
                 window.location.href = mailto;
@@ -120,23 +121,23 @@ export default function Contact ({background}) {
         </div>
         <form onSubmit={handleSubmit} className="my-5 flex flex-col justify-center items-center">
             <div className="user-box m-5">
-                <input className="black_color_input" onChange={HandleNameChange} type="text" name="name" required/>
+                <input className="black_color_input" aria-label="nom" onChange={HandleNameChange} type="text" id="name" required/>
                 <label htmlFor="name" className="black_color_label">Nom</label>
             </div>
             <div className="user-box m-5">
-                <input className="black_color_input" onChange={HandleFirstnameChange} type="text" name="firstname" required/>
+                <input className="black_color_input" aria-label="prénom" onChange={HandleFirstnameChange} type="text" id="firstname" required/>
                 <label htmlFor="firstname" className="black_color_label">Prénom</label>
             </div>
             <div className="user-box m-5">
-                <input className="black_color_input" onChange={HandleEmailChange} type="email" name="email" required/>
+                <input className="black_color_input" aria-label="email" onChange={HandleEmailChange} type="email" id="email" required/>
                 <label htmlFor="email" className="black_color_label">Email</label>
             </div>
             <div className="user-box m-5">
-                <input className="black_color_input" onChange={HandleSubjectChange} type="text" name="sujet" required/>
+                <input className="black_color_input" aria-label="sujet" onChange={HandleSubjectChange} type="text" id="sujet" required/>
                 <label htmlFor="sujet" className="black_color_label">Sujet</label>
             </div>
             <div className="user-box m-5">
-                <textarea className="black_color_input" onChange={HandleMessageChange}  type="text" name="message" rows="7" required/>
+                <textarea className="black_color_input" aria-label="message" onChange={HandleMessageChange}  type="text" id="message" rows="7" required/>
                 <label htmlFor="message" className="black_color_label">Votre message</label>
             </div>
             {IfMailSend ? <p className={`text-4xl text-center h-9 mb-5 ${ifError ? "text-red-500" : "text-green-500"}`}>{mailResponse}</p> : <p className="h-9"></p>}
